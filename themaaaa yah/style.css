@@ -1,0 +1,104 @@
+/*
+Theme Name: thema jeh
+Author:Florian Tjeertes
+Version: 1.0
+Author UI: www.spel.nl
+Version:0.1
+*/
+body{
+    font-family: sans-serif;
+    color: #333;
+  margin:0;
+  min-height: 100vh;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+}
+a{
+  color: dodgerblue;
+}
+/* layout */
+.bericht{
+  border-bottom: 6px double royalblue;
+}
+.bericht:last-of-type{
+  border-bottom: 0;
+}
+.container{
+padding:0 2em;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.container img{
+  max-width: 100%;
+}
+
+
+/* opmaak header */
+
+
+
+
+header{
+background-color: dodgerblue;
+color: #fff;
+background-size: cover;
+position: center center;
+min-height: 50vw;
+
+}
+
+header a{
+  color: #fff;
+
+}
+/* opmaak menu */
+
+
+nav{
+  margin-left: -5em;
+  margin-right: -5em;
+
+}
+nav ul.menu{
+  list-style-type: none
+  padding: 0;
+  margin: 0;
+  font-size: 1,3em;
+}
+
+nav .menu a{
+  text-decoration: none;
+  display: block;
+  background-color: royalblue;
+  padding: .5em 2em;
+
+
+}
+nav .menu a:hover{
+background-color: blue;
+}
+nav .menu .current-menu-item a{
+background-color: blue;
+border-right: .3em solid red;
+}
+@media screen and (min-width:800px;){
+  nav ul.menu{
+    display: grid;
+    grid-template-columns: repeat(Auto-fill, min-max(12em, 1fr));
+}
+
+}
+/* opmaak footer */
+
+footer{
+  background-color: dodgerblue;
+  color: #fff;
+
+}
+
+footer a{
+  color: #fff;
+
+}
