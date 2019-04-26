@@ -26,7 +26,7 @@ a{
 .container{
 padding:0 2em;
 max-width: 800px;
-margin-left: auto;
+margin-left: 40px;
 margin-right: auto;
 }
 
@@ -62,7 +62,7 @@ nav{
 
 }
 nav ul.menu{
-  list-style-type: none
+  list-style-type: none;
   padding: 0;
   margin: 0;
   font-size: 1,3em;
@@ -73,7 +73,7 @@ nav .menu a{
   display: block;
   background-color: royalblue;
   padding: .5em 2em;
-
+border-bottom: 1px solid #eee;
 
 }
 nav .menu a:hover{
@@ -83,10 +83,13 @@ nav .menu .current-menu-item a{
 background-color: blue;
 border-right: .3em solid red;
 }
-@media screen and (min-width:800px;){
+@media screen and (min-width:900px){
   nav ul.menu{
+	  padding-left:-100px;
     display: grid;
-    grid-template-columns: repeat(Auto-fill, min-max(12em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+	
+
 }
 
 }
